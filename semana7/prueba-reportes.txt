@@ -1,0 +1,9 @@
+Prueba de registro y consulta de incidencias
+
+Se realizó una petición GET /reportes para verificar si existían incidencias registradas en el sistema. Como era la primera consulta, el servidor respondió con un arreglo vacío, indicando que no había información almacenada.
+
+Después, se envió una petición POST /reportes para registrar una nueva incidencia relacionada con la comunidad. El reporte indicaba que había acumulación de basura en una zona del barrio.
+
+Una vez registrado el reporte, se volvió a ejecutar la petición GET /reportes. En esta ocasión, el servidor devolvió un arreglo que incluía la incidencia enviada anteriormente.
+
+Con esta prueba se comprobó que los reportes se almacenan correctamente en memoria y pueden ser consultados por los usuarios mientras el servidor permanezca en funcionamiento.
